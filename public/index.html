@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WA Serviços | Estética Automotiva Premium</title>
+    <script defer src="/js/links.js"></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -71,14 +73,14 @@
       <div class="container mx-auto px-6 py-4">
         <div class="flex justify-between items-center">
           <div class="flex items-center">
-            <i class="fas fa-car-side text-3xl text-accent mr-3"></i>
+            <img src="img/logo.png" alt="Logo" class="h-12 w-auto mr-3" />
             <h1 class="text-2xl font-bold">
-              WA<span class="text-white"> Serviços</span>
+              WA<span class="text-orange-400"> Serviços</span>
             </h1>
           </div>
           <nav class="hidden md:flex space-x-8">
             <a href="" class="hover:text-accent transition">Home</a>
-            <a href="serviços.html" class="hover:text-accent transition"
+            <a href="servicos.html" class="hover:text-accent transition"
               >Serviços</a
             >
             <a href="galeria.html" class="hover:text-accent transition"
@@ -106,10 +108,10 @@
         </p>
         <div class="flex flex-col md:flex-row justify-center gap-4">
           <button
-            class="bg-accent hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105"
+            class="btn-agendar bg-accent hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105"
           >
-            Agendar Serviço
-          </button>
+            Agendar Serviço</button
+          >>
           <button
             class="border-2 border-white hover:bg-white hover:text-primary font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105"
           >
@@ -198,7 +200,7 @@
                 <h3 class="text-xl font-bold">Lavagem Premium</h3>
                 <span
                   class="bg-blue-100 text-primary text-sm font-semibold px-3 py-1 rounded-full"
-                  >R$ 150</span
+                  >A partir de R$ 150</span
                 >
               </div>
               <p class="text-gray-600 mb-4">
@@ -219,11 +221,12 @@
                   premium
                 </li>
               </ul>
-              <button
-                class="w-full bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
+              <a
+                href="#"
+                class="btn-agendar w-full block text-center bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
               >
                 Agendar
-              </button>
+              </a>
             </div>
           </div>
 
@@ -233,16 +236,14 @@
           >
             <div
               class="h-48 bg-cover bg-center"
-              style="
-                background-image: url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
-              "
+              style="background-image: url('img/polimento_tecnico.png')"
             ></div>
             <div class="p-6">
               <div class="flex justify-between items-start mb-4">
                 <h3 class="text-xl font-bold">Polimento Técnico</h3>
                 <span
                   class="bg-blue-100 text-primary text-sm font-semibold px-3 py-1 rounded-full"
-                  >R$ 350</span
+                  >A partir de R$ 350</span
                 >
               </div>
               <p class="text-gray-600 mb-4">
@@ -263,11 +264,12 @@
                   cerâmica
                 </li>
               </ul>
-              <button
-                class="w-full bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
+              <a
+                href="#"
+                class="btn-agendar w-full block text-center bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
               >
                 Agendar
-              </button>
+              </a>
             </div>
           </div>
 
@@ -278,7 +280,7 @@
             <div
               class="h-48 bg-cover bg-center"
               style="
-                background-image: url('https://images.unsplash.com/photo-1504708694360-b88df38875f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+                background-image: url('img/revestimento_seramico_colt.jpg');
               "
             ></div>
             <div class="p-6">
@@ -286,7 +288,7 @@
                 <h3 class="text-xl font-bold">Revestimento Cerâmico</h3>
                 <span
                   class="bg-blue-100 text-primary text-sm font-semibold px-3 py-1 rounded-full"
-                  >R$ 800</span
+                  >A partir de R$ 800</span
                 >
               </div>
               <p class="text-gray-600 mb-4">
@@ -306,11 +308,12 @@
                   meses
                 </li>
               </ul>
-              <button
-                class="w-full bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
+              <a
+                href="#"
+                class="btn-agendar w-full block text-center bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
               >
                 Agendar
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -332,21 +335,19 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div class="overflow-hidden rounded-lg shadow-lg h-64">
             <img
-              src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              src="img/carro_espumado.img"
               alt="Carro lavado"
               class="w-full h-full object-cover transform hover:scale-110 transition duration-500"
             />
           </div>
           <div class="overflow-hidden rounded-lg shadow-lg h-64">
-            <img
-              src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-              alt="Detalhamento interno"
-              class="w-full h-full object-cover transform hover:scale-110 transition duration-500"
-            />
+            <img src="img/carro_pronto.img"" alt="Detalhamento interno"
+            class="w-full h-full object-cover transform hover:scale-110
+            transition duration-500" />
           </div>
           <div class="overflow-hidden rounded-lg shadow-lg h-64">
             <img
-              src="https://images.unsplash.com/photo-1494972308805-463d619d35ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80"
+              src="img/polimento_polo.png"
               alt="Polimento"
               class="w-full h-full object-cover transform hover:scale-110 transition duration-500"
             />
@@ -360,7 +361,7 @@
           </div>
           <div class="overflow-hidden rounded-lg shadow-lg h-64">
             <img
-              src="https://images.unsplash.com/photo-1504708694360-b88df38875f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              src="img/vitrificar.png"
               alt="Revestimento cerâmico"
               class="w-full h-full object-cover transform hover:scale-110 transition duration-500"
             />

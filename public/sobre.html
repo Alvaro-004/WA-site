@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WA Serviços | Sobre Nós</title>
+    <script defer src="/js/links.js"></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -30,9 +32,9 @@
       <div class="container mx-auto px-6 py-4">
         <div class="flex justify-between items-center">
           <div class="flex items-center">
-            <i class="fas fa-car-side text-3xl text-accent mr-3"></i>
+            <img src="img/logo.png" alt="Logo" class="h-12 w-auto mr-3" />
             <h1 class="text-2xl font-bold">
-              WA<span class="text-white"> Serviços</span>
+              WA<span class="text-orange-400"> Serviços</span>
             </h1>
           </div>
           <nav class="hidden md:flex space-x-8">
@@ -59,7 +61,7 @@
     <section class="pt-32 pb-20 bg-white">
       <div class="container mx-auto px-6">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          <h2 class href="img/logo.png">
             Nossa <span class="text-primary">História</span>
           </h2>
           <p class="text-gray-600 max-w-2xl mx-auto">
@@ -171,8 +173,8 @@
     <!-- Floating WhatsApp Button (igual em todas páginas) -->
     <div class="fixed bottom-8 right-8 z-50 floating-button">
       <a
-        href="#"
-        class="bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition"
+        href="js/links.js"
+        class="btn-agendar bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition"
       >
         <i class="fab fa-whatsapp text-2xl"></i>
       </a>

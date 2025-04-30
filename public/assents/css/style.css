@@ -1,0 +1,10 @@
+.gallery-title {
+  color: #ffffff; /* Cor branca para contrastar com o fundo escuro */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para melhor legibilidade */
+  margin-bottom: 2rem; /* Espaçamento */
+}
+
+.gallery-subtitle {
+  color: #ffa500; /* Laranja (accent) para o subtítulo */
+  margin-bottom: 1.5rem;
+}

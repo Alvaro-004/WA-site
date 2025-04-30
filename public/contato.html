@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WA Serviços | Contato</title>
+    <script defer src="/js/links.js"></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -30,9 +32,9 @@
       <div class="container mx-auto px-6 py-4">
         <div class="flex justify-between items-center">
           <div class="flex items-center">
-            <i class="fas fa-car-side text-3xl text-accent mr-3"></i>
+            <img src="img/logo.png" alt="Logo" class="h-12 w-auto mr-3" />
             <h1 class="text-2xl font-bold">
-              WA<span class="text-white"> Serviços</span>
+              WA<span class="text-orange-400"> Serviços</span>
             </h1>
           </div>
           <nav class="hidden md:flex space-x-8">
@@ -58,7 +60,7 @@
     </header>
 
     <!-- Hero Section para Contato -->
-    <section class="hero flex items-center justify-center text-white pt-20">
+    <section class="hero flex items-center justify-center text-black pt-20">
       <div class="container mx-auto px-6 text-center">
         <h1 class="text-4xl md:text-6xl font-bold mb-6">
           Fale <span class="text-accent">Conosco</span>
@@ -207,22 +209,16 @@
             <!-- Redes Sociais -->
             <div class="mt-8">
               <h3 class="text-xl font-bold mb-4">Siga-nos</h3>
-              <div class="flex space-x-4">
-                <a
-                  href="#"
-                  class="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 transition"
-                >
-                  <i class="fab fa-facebook-f"></i>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/waservicosoficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                   class="bg-pink-600 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-700 transition"
                 >
                   <i class="fab fa-instagram"></i>
                 </a>
                 <a
-                  href="#"
-                  class="bg-green-500 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-green-600 transition"
+                  href="js/links.js"
+                  class="btn-agendar bg-green-500 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-green-600 transition"
                 >
                   <i class="fab fa-whatsapp"></i>
                 </a>
@@ -241,8 +237,8 @@
     <!-- Floating WhatsApp Button -->
     <div class="fixed bottom-8 right-8 z-50 floating-button">
       <a
-        href="#"
-        class="bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition"
+        href="js/links.js"
+        class="btn-agendar bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition"
       >
         <i class="fab fa-whatsapp text-2xl"></i>
       </a>
