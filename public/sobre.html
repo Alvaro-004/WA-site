@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WA Serviços | Sobre Nós</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0056b3",
+              secondary: "#003366",
+              accent: "#FFA500",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="font-sans bg-gray-50">
+    <!-- Header/Navigation (igual em todas páginas) -->
+    <header class="fixed w-full bg-primary text-white z-50">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <i class="fas fa-car-side text-3xl text-accent mr-3"></i>
+            <h1 class="text-2xl font-bold">
+              WA<span class="text-white"> Serviços</span>
+            </h1>
+          </div>
+          <nav class="hidden md:flex space-x-8">
+            <a href="index.html" class="hover:text-accent transition">Home</a>
+            <a href="servicos.html" class="hover:text-accent transition"
+              >Serviços</a
+            >
+            <a href="galeria.html" class="hover:text-accent transition"
+              >Galeria</a
+            >
+            <a href="sobre.html" class="hover:text-accent transition">Sobre</a>
+            <a href="contato.html" class="hover:text-accent transition"
+              >Contato</a
+            >
+          </nav>
+          <button class="md:hidden text-white focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Conteúdo específico da página Sobre -->
+    <section class="pt-32 pb-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Nossa <span class="text-primary">História</span>
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Conheça a trajetória da WA Serviços no mercado de estética
+            automotiva.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h3 class="text-2xl font-bold mb-6 text-secondary">
+              Excelência desde 2015
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Fundada em Ananindeua, a WA Serviços começou como uma pequena
+              oficina e hoje é referência em estética automotiva na região.
+            </p>
+            <p class="text-gray-600 mb-6">
+              Nossa missão é proporcionar aos clientes serviços de altíssima
+              qualidade, utilizando os melhores produtos e técnicas do mercado.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                <span class="text-gray-600"
+                  >Equipe especializada e continuamente treinada</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                <span class="text-gray-600"
+                  >Produtos importados e de primeira linha</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                <span class="text-gray-600"
+                  >Atendimento personalizado e garantia de satisfação</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="rounded-xl overflow-hidden shadow-lg">
+            <img
+              src="assets/images/sobre-nos.jpg"
+              alt="Nossa oficina"
+              class="w-full h-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Valores -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h3 class="text-2xl font-bold mb-12 text-center text-secondary">
+          Nossos <span class="text-primary">Valores</span>
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Valor 1 -->
+          <div class="bg-white p-8 rounded-xl shadow-md text-center">
+            <div
+              class="bg-blue-50 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-medal text-3xl text-primary"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-3">Qualidade</h4>
+            <p class="text-gray-600">
+              Não aceitamos nada menos que a excelência em todos os nossos
+              serviços.
+            </p>
+          </div>
+
+          <!-- Valor 2 -->
+          <div class="bg-white p-8 rounded-xl shadow-md text-center">
+            <div
+              class="bg-blue-50 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-handshake text-3xl text-primary"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-3">Honestidade</h4>
+            <p class="text-gray-600">
+              Transparência e ética no relacionamento com nossos clientes.
+            </p>
+          </div>
+
+          <!-- Valor 3 -->
+          <div class="bg-white p-8 rounded-xl shadow-md text-center">
+            <div
+              class="bg-blue-50 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-heart text-3xl text-primary"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-3">Paixão</h4>
+            <p class="text-gray-600">
+              Amamos o que fazemos e isso reflete no cuidado com cada veículo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer (igual em todas páginas) -->
+    <footer class="bg-secondary text-white py-12">
+      <!-- ... mesmo footer do index.html ... -->
+    </footer>
+
+    <!-- Floating WhatsApp Button (igual em todas páginas) -->
+    <div class="fixed bottom-8 right-8 z-50 floating-button">
+      <a
+        href="#"
+        class="bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition"
+      >
+        <i class="fab fa-whatsapp text-2xl"></i>
+      </a>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
