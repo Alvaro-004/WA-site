@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WA Serviços | Galeria</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0056b3",
+              secondary: "#003366",
+              accent: "#FFA500",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="font-sans bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-primary text-white z-50">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <i class="fas fa-car-side text-3xl text-accent mr-3"></i>
+            <h1 class="text-2xl font-bold">
+              WA<span class="text-white"> Serviços</span>
+            </h1>
+          </div>
+          <nav class="hidden md:flex space-x-8">
+            <a href="index.html" class="hover:text-accent transition">Home</a>
+            <a href="servicos.html" class="hover:text-accent transition"
+              >Serviços</a
+            >
+            <a
+              href="galeria.html"
+              class="hover:text-accent transition font-bold text-accent"
+              >Galeria</a
+            >
+            <a href="sobre.html" class="hover:text-accent transition">Sobre</a>
+            <a href="contato.html" class="hover:text-accent transition"
+              >Contato</a
+            >
+          </nav>
+          <button class="md:hidden text-white focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section para Galeria -->
+    <section class="hero flex items-center justify-center text-white pt-20">
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+          Nossa <span class="text-accent">Galeria</span>
+        </h1>
+        <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto">
+          Veja os resultados impressionantes que alcançamos para nossos
+          clientes.
+        </p>
+      </div>
+    </section>
+
+    <!-- Galeria Completa -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Trabalhos <span class="text-primary">Realizados</span>
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Confira nosso portfólio de serviços realizados.
+          </p>
+        </div>
+
+        <!-- Filtros -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+          <button class="px-4 py-2 bg-primary text-white rounded-full">
+            Todos
+          </button>
+          <button
+            class="px-4 py-2 border border-primary text-primary rounded-full hover:bg-primary hover:text-white transition"
+          >
+            Lavagem
+          </button>
+          <button
+            class="px-4 py-2 border border-primary text-primary rounded-full hover:bg-primary hover:text-white transition"
+          >
+            Polimento
+          </button>
+          <button
+            class="px-4 py-2 border border-primary text-primary rounded-full hover:bg-primary hover:text-white transition"
+          >
+            Revestimento
+          </button>
+          <button
+            class="px-4 py-2 border border-primary text-primary rounded-full hover:bg-primary hover:text-white transition"
+          >
+            Detalhamento
+          </button>
+        </div>
+
+        <!-- Grid de Imagens -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Item 1 -->
+          <div class="group relative overflow-hidden rounded-lg shadow-lg h-64">
+            <img
+              src="assets/images/galeria/lavagem-1.jpg"
+              alt="Lavagem premium"
+              class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center"
+            >
+              <div class="text-center p-4">
+                <h3 class="text-white font-bold text-xl">Lavagem Premium</h3>
+                <p class="text-gray-300">BMW Série 3</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="group relative overflow-hidden rounded-lg shadow-lg h-64">
+            <img
+              src="assets/images/galeria/polimento-1.jpg"
+              alt="Polimento técnico"
+              class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center"
+            >
+              <div class="text-center p-4">
+                <h3 class="text-white font-bold text-xl">Polimento Técnico</h3>
+                <p class="text-gray-300">Audi A5</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="group relative overflow-hidden rounded-lg shadow-lg h-64">
+            <img
+              src="assets/images/galeria/ceramico-1.jpg"
+              alt="Revestimento cerâmico"
+              class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center"
+            >
+              <div class="text-center p-4">
+                <h3 class="text-white font-bold text-xl">
+                  Revestimento Cerâmico
+                </h3>
+                <p class="text-gray-300">Porsche 911</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="group relative overflow-hidden rounded-lg shadow-lg h-64">
+            <img
+              src="assets/images/galeria/detalhamento-1.jpg"
+              alt="Detalhamento interno"
+              class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center"
+            >
+              <div class="text-center p-4">
+                <h3 class="text-white font-bold text-xl">
+                  Detalhamento Interno
+                </h3>
+                <p class="text-gray-300">Mercedes Classe C</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="group relative overflow-hidden rounded-lg shadow-lg h-64">
+            <img
+              src="assets/images/galeria/motor-1.jpg"
+              alt="Lavagem de motor"
+              class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center"
+            >
+              <div class="text-center p-4">
+                <h3 class="text-white font-bold text-xl">Lavagem de Motor</h3>
+                <p class="text-gray-300">Chevrolet Camaro</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="group relative overflow-hidden rounded-lg shadow-lg h-64">
+            <img
+              src="assets/images/galeria/farois-1.jpg"
+              alt="Vitrificação de faróis"
+              class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center"
+            >
+              <div class="text-center p-4">
+                <h3 class="text-white font-bold text-xl">
+                  Vitrificação de Faróis
+                </h3>
+                <p class="text-gray-300">Volkswagen Golf</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paginação -->
+        <div class="flex justify-center mt-12">
+          <nav class="flex items-center space-x-2">
+            <a
+              href="#"
+              class="px-4 py-2 border rounded-full text-primary border-primary hover:bg-primary hover:text-white transition"
+              >&laquo;</a
+            >
+            <a
+              href="#"
+              class="px-4 py-2 border rounded-full bg-primary text-white"
+              >1</a
+            >
+            <a
+              href="#"
+              class="px-4 py-2 border rounded-full text-primary border-primary hover:bg-primary hover:text-white transition"
+              >2</a
+            >
+            <a
+              href="#"
+              class="px-4 py-2 border rounded-full text-primary border-primary hover:bg-primary hover:text-white transition"
+              >3</a
+            >
+            <a
+              href="#"
+              class="px-4 py-2 border rounded-full text-primary border-primary hover:bg-primary hover:text-white transition"
+              >&raquo;</a
+            >
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-12">
+      <!-- ... mesmo footer do index.html ... -->
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-8 right-8 z-50 floating-button">
+      <a
+        href="#"
+        class="bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition"
+      >
+        <i class="fab fa-whatsapp text-2xl"></i>
+      </a>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
