@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -345,3 +346,350 @@
     <script src="assets/js/main.js"></script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WA Serviços | Nossos Serviços</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0056b3",
+              secondary: "#003366",
+              accent: "#FFA500",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="font-sans bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-primary text-white z-50">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <i class="fas fa-car-side text-3xl text-accent mr-3"></i>
+            <h1 class="text-2xl font-bold">
+              WA<span class="text-white"> Serviços</span>
+            </h1>
+          </div>
+          <nav class="hidden md:flex space-x-8">
+            <a href="index.html" class="hover:text-accent transition">Home</a>
+            <a
+              href="servicos.html"
+              class="hover:text-accent transition font-bold text-accent"
+              >Serviços</a
+            >
+            <a href="galeria.html" class="hover:text-accent transition"
+              >Galeria</a
+            >
+            <a href="sobre.html" class="hover:text-accent transition">Sobre</a>
+            <a href="contato.html" class="hover:text-accent transition"
+              >Contato</a
+            >
+          </nav>
+          <button class="md:hidden text-white focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section para Serviços -->
+    <section class="hero flex items-center justify-center text-white pt-20">
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+          Nossos <span class="text-accent">Serviços</span>
+        </h1>
+        <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto">
+          Conheça todos os serviços premium que oferecemos para o seu veículo.
+        </p>
+      </div>
+    </section>
+
+    <!-- Todos os Serviços -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Serviços <span class="text-primary">Completos</span>
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Oferecemos uma gama completa de serviços para cuidar do seu veículo.
+          </p>
+        </div>
+
+        <!-- Categorias de Serviços -->
+        <div class="mb-12">
+          <h3 class="text-2xl font-bold mb-6 text-secondary">
+            Lavagem e Detalhamento
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Serviço 1 -->
+            <div
+              class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 service-card transition duration-500"
+            >
+              <div class="p-6">
+                <div class="flex justify-between items-start mb-4">
+                  <h3 class="text-xl font-bold">Lavagem Premium</h3>
+                  <span
+                    class="bg-blue-100 text-primary text-sm font-semibold px-3 py-1 rounded-full"
+                    >R$ 150</span
+                  >
+                </div>
+                <p class="text-gray-600 mb-4">
+                  Lavagem completa com produtos premium, secagem com toalhas de
+                  microfibra e acabamento com cera líquida.
+                </p>
+                <ul class="space-y-2 mb-6">
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-primary mr-2"></i> Shampoo
+                    profissional
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-primary mr-2"></i> Aspiração
+                    completa
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-primary mr-2"></i> Cera líquida
+                    premium
+                  </li>
+                </ul>
+                <button
+                  class="w-full bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
+                >
+                  Agendar
+                </button>
+              </div>
+            </div>
+
+            <!-- Serviço 2 -->
+            <div
+              class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 service-card transition duration-500"
+            >
+              <div class="p-6">
+                <div class="flex justify-between items-start mb-4">
+                  <h3 class="text-xl font-bold">Detalhamento Interno</h3>
+                  <span
+                    class="bg-blue-100 text-primary text-sm font-semibold px-3 py-1 rounded-full"
+                    >R$ 250</span
+                  >
+                </div>
+                <p class="text-gray-600 mb-4">
+                  Limpeza profunda do interior com higienização de estofados,
+                  painel, plásticos e vidros.
+                </p>
+                <ul class="space-y-2 mb-6">
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-primary mr-2"></i> Higienização
+                    de estofados
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-primary mr-2"></i> Limpeza de
+                    plásticos
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-primary mr-2"></i> Aromatização
+                    profissional
+                  </li>
+                </ul>
+                <button
+                  class="w-full bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
+                >
+                  Agendar
+                </button>
+              </div>
+            </div>
+
+            <!-- Serviço 3 -->
+            <div
+              class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 service-card transition duration-500"
+            >
+              <div class="p-6">
+                <div class="flex justify-between items-start mb-4">
+                  <h3 class="text-xl font-bold">Lavagem de Motor</h3>
+                  <span
+                    class="bg-blue-100 text-primary text-sm font-semibold px-3 py-1 rounded-full"
+                    >R$ 180</span
+                  >
+                </div>
+                <p class="text-gray-600 mb-4">
+                  Limpeza segura do compartimento do motor com produtos
+                  específicos e proteção de componentes.
+                </p>
+                <ul class="space-y-2 mb-6">
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-primary mr-2"></i> Produtos
+                    não-corrosivos
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-primary mr-2"></i> Proteção de
+                    componentes
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-primary mr-2"></i> Brilho
+                    prolongado
+                  </li>
+                </ul>
+                <button
+                  class="w-full bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
+                >
+                  Agendar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Outra Categoria -->
+        <div class="mb-12">
+          <h3 class="text-2xl font-bold mb-6 text-secondary">
+            Proteção e Acabamento
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Serviço 4 -->
+            <div
+              class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 service-card transition duration-500"
+            >
+              <div class="p-6">
+                <div class="flex justify-between items-start mb-4">
+                  <h3 class="text-xl font-bold">Polimento Técnico</h3>
+                  <span
+                    class="bg-blue-100 text-primary text-sm font-semibold px-3 py-1 rounded-full"
+                    >R$ 350</span
+                  >
+                </div>
+                <p class="text-gray-600 mb-4">
+                  Remoção de riscos e imperfeições com máquinas profissionais,
+                  deixando a pintura como nova.
+                </p>
+                <ul class="space-y-2 mb-6">
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-primary mr-2"></i> Correção de
+                    riscos
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-primary mr-2"></i> Remoção de
+                    oxidação
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-primary mr-2"></i> Proteção
+                    cerâmica
+                  </li>
+                </ul>
+                <button
+                  class="w-full bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
+                >
+                  Agendar
+                </button>
+              </div>
+            </div>
+
+            <!-- Serviço 5 -->
+            <div
+              class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 service-card transition duration-500"
+            >
+              <div class="p-6">
+                <div class="flex justify-between items-start mb-4">
+                  <h3 class="text-xl font-bold">Revestimento Cerâmico</h3>
+                  <span
+                    class="bg-blue-100 text-primary text-sm font-semibold px-3 py-1 rounded-full"
+                    >R$ 800</span
+                  >
+                </div>
+                <p class="text-gray-600 mb-4">
+                  Proteção de longa duração que mantém seu carro brilhando por
+                  até 2 anos.
+                </p>
+                <ul class="space-y-2 mb-6">
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-primary mr-2"></i> Proteção 9H
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-primary mr-2"></i> Repelente de
+                    água
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-primary mr-2"></i> Garantia de
+                    24 meses
+                  </li>
+                </ul>
+                <button
+                  class="w-full bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
+                >
+                  Agendar
+                </button>
+              </div>
+            </div>
+
+            <!-- Serviço 6 -->
+            <div
+              class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 service-card transition duration-500"
+            >
+              <div class="p-6">
+                <div class="flex justify-between items-start mb-4">
+                  <h3 class="text-xl font-bold">Vitrificação de Faróis</h3>
+                  <span
+                    class="bg-blue-100 text-primary text-sm font-semibold px-3 py-1 rounded-full"
+                    >R$ 120</span
+                  >
+                </div>
+                <p class="text-gray-600 mb-4">
+                  Restauração de faróis amarelados ou opacos com proteção contra
+                  raios UV.
+                </p>
+                <ul class="space-y-2 mb-6">
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-primary mr-2"></i> Remoção de
+                    amarelado
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-primary mr-2"></i> Proteção UV
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-check text-primary mr-2"></i> Garantia de 6
+                    meses
+                  </li>
+                </ul>
+                <button
+                  class="w-full bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
+                >
+                  Agendar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-12">
+      <!-- ... mesmo footer do index.html ... -->
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-8 right-8 z-50 floating-button">
+      <a
+        href="#"
+        class="bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition"
+      >
+        <i class="fab fa-whatsapp text-2xl"></i>
+      </a>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+>>>>>>> 887868a8257103cd55df5091bb1dad03e3d50ade
