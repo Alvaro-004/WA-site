@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WA Serviços | Nossos Serviços</title>
     <script defer src="/js/links.js"></script>
-
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -25,6 +24,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .service-card:hover img {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+      }
+    </style>
   </head>
   <body class="font-sans bg-gray-50">
     <!-- Header/Navigation -->
@@ -59,7 +64,7 @@
       </div>
     </header>
 
-    <!-- Hero Section para Serviços -->
+    <!-- Hero Section -->
     <section class="hero flex items-center justify-center text-black pt-20">
       <div class="container mx-auto px-6 text-center">
         <h1 class="text-4xl md:text-6xl font-bold mb-6">
@@ -83,7 +88,7 @@
           </p>
         </div>
 
-        <!-- Categorias de Serviços -->
+        <!-- Categoria 1 -->
         <div class="mb-12">
           <h3 class="text-2xl font-bold mb-6 text-secondary">
             Lavagem e Detalhamento
@@ -91,14 +96,21 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Serviço 1 -->
             <div
-              class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 service-card transition duration-500"
+              class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 service-card"
             >
+              <div class="h-56 overflow-hidden">
+                <img
+                  src="img/carro_sendo_lavadp.avif"
+                  alt="Lavagem premium com espuma e equipamentos profissionais"
+                  class="w-full h-full object-cover"
+                />
+              </div>
               <div class="p-6">
                 <div class="flex justify-between items-start mb-4">
                   <h3 class="text-xl font-bold">Lavagem Premium</h3>
                   <span
                     class="bg-blue-100 text-primary text-sm font-semibold px-3 py-1 rounded-full"
-                    >R$ 150</span
+                    >A Partir de R$ 150</span
                   >
                 </div>
                 <p class="text-gray-600 mb-4">
@@ -119,24 +131,33 @@
                     premium
                   </li>
                 </ul>
-                <button
-                  class="w-full bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
+                <a
+                  href="https://wa.me/qr/RZREFPGKWXAJC1?text=Olá,%20vim%20pelo%20site.%20gostaria%20de%20conhecer%20os%20serviços"
+                  target="_blank"
+                  class="btn-agendar w-full block text-center bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
                 >
                   Agendar
-                </button>
+                </a>
               </div>
             </div>
 
             <!-- Serviço 2 -->
             <div
-              class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 service-card transition duration-500"
+              class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 service-card"
             >
+              <div class="h-56 overflow-hidden">
+                <img
+                  src="img/detalhamento_interno.png"
+                  alt="Detalhamento interno com limpeza profunda"
+                  class="w-full h-full object-cover"
+                />
+              </div>
               <div class="p-6">
                 <div class="flex justify-between items-start mb-4">
                   <h3 class="text-xl font-bold">Detalhamento Interno</h3>
                   <span
                     class="bg-blue-100 text-primary text-sm font-semibold px-3 py-1 rounded-full"
-                    >R$ 250</span
+                    >A Partir de R$ 250</span
                   >
                 </div>
                 <p class="text-gray-600 mb-4">
@@ -157,24 +178,33 @@
                     profissional
                   </li>
                 </ul>
-                <button
-                  class="w-full bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
+                <a
+                  href="https://wa.me/qr/RZREFPGKWXAJC1?text=Olá,%20vim%20pelo%20site.%20gostaria%20de%20conhecer%20os%20serviços"
+                  target="_blank"
+                  class="btn-agendar w-full block text-center bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
                 >
                   Agendar
-                </button>
+                </a>
               </div>
             </div>
 
             <!-- Serviço 3 -->
             <div
-              class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 service-card transition duration-500"
+              class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 service-card"
             >
+              <div class="h-56 overflow-hidden">
+                <img
+                  src="img/lavagem_motor.png"
+                  alt="Lavagem cuidadosa do compartimento do motor"
+                  class="w-full h-full object-cover"
+                />
+              </div>
               <div class="p-6">
                 <div class="flex justify-between items-start mb-4">
                   <h3 class="text-xl font-bold">Lavagem de Motor</h3>
                   <span
                     class="bg-blue-100 text-primary text-sm font-semibold px-3 py-1 rounded-full"
-                    >R$ 180</span
+                    >A Partir de R$ 180</span
                   >
                 </div>
                 <p class="text-gray-600 mb-4">
@@ -195,17 +225,19 @@
                     prolongado
                   </li>
                 </ul>
-                <button
-                  class="w-full bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
+                <a
+                  href="https://wa.me/qr/RZREFPGKWXAJC1?text=Olá,%20vim%20pelo%20site.%20gostaria%20de%20conhecer%20os%20serviços"
+                  target="_blank"
+                  class="btn-agendar w-full block text-center bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
                 >
                   Agendar
-                </button>
+                </a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Outra Categoria -->
+        <!-- Categoria 2 -->
         <div class="mb-12">
           <h3 class="text-2xl font-bold mb-6 text-secondary">
             Proteção e Acabamento
@@ -213,14 +245,21 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Serviço 4 -->
             <div
-              class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 service-card transition duration-500"
+              class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 service-card"
             >
+              <div class="h-56 overflow-hidden">
+                <img
+                  src="img/polimento.png"
+                  alt="Técnico realizando polimento profissional"
+                  class="w-full h-full object-cover"
+                />
+              </div>
               <div class="p-6">
                 <div class="flex justify-between items-start mb-4">
                   <h3 class="text-xl font-bold">Polimento Técnico</h3>
                   <span
                     class="bg-blue-100 text-primary text-sm font-semibold px-3 py-1 rounded-full"
-                    >R$ 350</span
+                    >A Partir de R$ 350</span
                   >
                 </div>
                 <p class="text-gray-600 mb-4">
@@ -241,24 +280,33 @@
                     cerâmica
                   </li>
                 </ul>
-                <button
-                  class="w-full bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
+                <a
+                  href="https://wa.me/qr/RZREFPGKWXAJC1?text=Olá,%20vim%20pelo%20site.%20gostaria%20de%20conhecer%20os%20serviços"
+                  target="_blank"
+                  class="btn-agendar w-full block text-center bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
                 >
                   Agendar
-                </button>
+                </a>
               </div>
             </div>
 
             <!-- Serviço 5 -->
             <div
-              class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 service-card transition duration-500"
+              class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 service-card"
             >
+              <div class="h-56 overflow-hidden">
+                <img
+                  src="img/revestimento_seramico_colt.jpg"
+                  alt="Aplicação de revestimento cerâmico na pintura"
+                  class="w-full h-full object-cover"
+                />
+              </div>
               <div class="p-6">
                 <div class="flex justify-between items-start mb-4">
                   <h3 class="text-xl font-bold">Revestimento Cerâmico</h3>
                   <span
                     class="bg-blue-100 text-primary text-sm font-semibold px-3 py-1 rounded-full"
-                    >R$ 800</span
+                    >A Partir de R$ 800</span
                   >
                 </div>
                 <p class="text-gray-600 mb-4">
@@ -278,24 +326,33 @@
                     24 meses
                   </li>
                 </ul>
-                <button
-                  class="w-full bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
+                <a
+                  href="https://wa.me/qr/RZREFPGKWXAJC1?text=Olá,%20vim%20pelo%20site.%20gostaria%20de%20conhecer%20os%20serviços"
+                  target="_blank"
+                  class="btn-agendar w-full block text-center bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
                 >
                   Agendar
-                </button>
+                </a>
               </div>
             </div>
 
             <!-- Serviço 6 -->
             <div
-              class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 service-card transition duration-500"
+              class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 service-card"
             >
+              <div class="h-56 overflow-hidden">
+                <img
+                  src="img/vitrificar_farois.png"
+                  alt="Faróis sendo vitrificados por especialista"
+                  class="w-full h-full object-cover"
+                />
+              </div>
               <div class="p-6">
                 <div class="flex justify-between items-start mb-4">
                   <h3 class="text-xl font-bold">Vitrificação de Faróis</h3>
                   <span
                     class="bg-blue-100 text-primary text-sm font-semibold px-3 py-1 rounded-full"
-                    >R$ 120</span
+                    >A Partir de R$ 120</span
                   >
                 </div>
                 <p class="text-gray-600 mb-4">
@@ -315,11 +372,14 @@
                     meses
                   </li>
                 </ul>
-                <button
-                  class="w-full bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
+                <br />
+                <a
+                  href="https://wa.me/qr/RZREFPGKWXAJC1?text=Olá,%20vim%20pelo%20site.%20gostaria%20de%20conhecer%20os%20serviços"
+                  target="_blank"
+                  class="btn-agendar w-full block text-center bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded transition"
                 >
                   Agendar
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -329,14 +389,16 @@
 
     <!-- Footer -->
     <footer class="bg-secondary text-white py-12">
-      <!-- ... mesmo footer do index.html ... -->
+      <!-- ... conteúdo do footer ... -->
     </footer>
 
-    <!-- Floating WhatsApp Button -->
-    <div class="fixed bottom-8 right-8 z-50 floating-button">
+    <!-- WhatsApp Button -->
+    <div class="fixed bottom-8 right-8 z-50">
       <a
-        href="js/links.js"
-        class="btn-agendar bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition"
+        href="https://wa.me/qr/RZREFPGKWXAJC1"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition"
       >
         <i class="fab fa-whatsapp text-2xl"></i>
       </a>
